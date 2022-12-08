@@ -4,17 +4,13 @@
     padding-bottom: 94px;
 }
 
-$breackpoint: (
-    phone: 480px,
-    tablet: 768px,
-    dsctop: 1600px,
-);
-
 .container {
     // phone screen 0px & >
     max-width: 480px;
-    padding: 0px 15px;
-    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+
 
     // tablets screen 768px & >
     @media screen and (min-width: 768px) {
@@ -24,5 +20,6 @@ $breackpoint: (
     // desktop screen 1600px & >
     @media screen and (min-width: 1600px) {
         max-width: 1600px;
+        
     }
 }
