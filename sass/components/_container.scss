@@ -10,21 +10,19 @@ $breackpoint: (
     dsctop: 1600px,
 );
 
-
-.container {  
-    margin: 0 auto;
+.container {
+    // phone screen 0px & >
+    max-width: 480px;
     padding: 0px 15px;
+    margin: 0 auto;
 
-// phone screen 0px & >
-    @media screen and (min-with: 480px) {
-    max-width: 480px; 
-
+    // tablets screen 768px & >
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
     }
-// tablets screen 768px & >
-      @media screen and (min-width: 768px) {
-    max-width: 768px;
-}
-// desktop screen 1200px & >
- @media screen and (min-width: 1200px) {
-    max-width: 1200px;} 
+
+    // desktop screen 1600px & >
+    @media screen and (min-width: 1600px) {
+        max-width: 1600px;
+    }
 }
