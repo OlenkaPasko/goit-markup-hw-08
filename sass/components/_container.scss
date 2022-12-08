@@ -4,8 +4,27 @@
     padding-bottom: 94px;
 }
 
-.container {
-    width: 1200px;
+$breackpoint: (
+    phone: 480px,
+    tablet: 768px,
+    dsctop: 1600px,
+);
+
+
+.container {  
     margin: 0 auto;
-    padding: 0px 15px
+    padding: 0px 15px;
+
+// phone screen 0px & >
+    @media screen and (min-with: 480px) {
+    max-width: 480px; 
+
+    }
+// tablets screen 768px & >
+      @media screen and (min-width: 768px) {
+    max-width: 768px;
+}
+// desktop screen 1200px & >
+ @media screen and (min-width: 1200px) {
+    max-width: 1200px;} 
 }
