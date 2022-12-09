@@ -8,29 +8,23 @@
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-.applications {
-    padding-top: 0px;
-    padding-right: 617px;
-    padding-left: 617px;
-    width: 366px;
 
-    .section__images {
-        display: flex;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-left: 0px;
+.section__images {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
 
-    }
-}
+    .section__item {
+        position: relative;
+        margin-left: 30px;
 
-.section__item {
-    position: relative;
-    margin-left: 30px;
+        width: calc((100% - 30px)/3);
 
-    width: calc((100% - 30px)/3);
-
-    &:first-child {
-        margin-left: 0px;
+        &:first-child {
+            margin-left: 0px;
+        }
     }
 }
 

@@ -1,9 +1,26 @@
 .section {
     margin: auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+.section-applications {
+    @media screen and (max-width:1599px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1600px) {
+        max-width: 1170px;
+
+    }
+}
 .container {
     // phone screen 0px & >
     max-width: 480px;
