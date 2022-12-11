@@ -10,8 +10,6 @@
 
 
     //phone screen
-
-
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url('../images/hero/img_sm@1x.jpg');
 
@@ -59,16 +57,21 @@
 .hero__title {
     margin: auto;
     margin-bottom: 30px;
-    width: 696px;
-
+    width: 360px;
     font-family: var(--primary-font);
     font-style: inherit;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3;
+    font-size: 26px;
+    line-height: 1.6;
     text-align: center;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: var(--primary-white-color);
 
-    color: var(--primary-white-color)
+    @media screen and (min-width: 1200px) {
+
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.3;
+
+    }
 }
