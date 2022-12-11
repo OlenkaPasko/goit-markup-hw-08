@@ -3,11 +3,12 @@
 }
 
 .personal-foto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+    .personal-foto__img {
+        margin-bottom: 30px;
     }
 
     .personal-foto__item {
@@ -22,21 +23,35 @@
 
         @media screen and (min-width: 1200px) {
             max-width: 270px;
-
-            &:nth-child(n+2) {
-                margin-left: 30px;
-            }
         }
     }
 
 }
-.personal-foto .social-icons {
+.member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+
+    .member__name {
+        margin-bottom: 10px;
+
+    }
+
+    .member__position {
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+}
+.social-icons {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
 
-.personal-foto .social-item {
+.social-item {
     width: 44px;
     height: 44px;
     margin-right: 10px;
@@ -74,24 +89,3 @@
 }
 
 
-.member__name {
-    margin-top: 0px;
-    margin-bottom: 10px;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.1;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-
-    .member__position {
-        margin-bottom: 16px;
-
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.1;
-        text-align: center;
-        letter-spacing: 0.03em;
-    }
-}

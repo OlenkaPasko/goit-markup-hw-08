@@ -435,6 +435,11 @@ a[href="#"] {
 .features .features__item {
   max-width: 450px;
 }
+@media screen and (max-width: 1119px) {
+  .features .features__item {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .features .features__item {
     max-width: 354px;
@@ -443,11 +448,6 @@ a[href="#"] {
 @media screen and (min-width: 1200px) {
   .features .features__item {
     max-width: 270px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .features .features__item:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 
@@ -549,15 +549,16 @@ a[href="#"] {
   background-color: var(--primary-button-color);
 }
 
-@media screen and (min-width: 768px) {
-  .personal-foto {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-  }
+.personal-foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+.personal-foto .personal-foto__img {
+  margin-bottom: 30px;
 }
 .personal-foto .personal-foto__item {
   max-width: 450px;
@@ -575,12 +576,25 @@ a[href="#"] {
   .personal-foto .personal-foto__item {
     max-width: 270px;
   }
-  .personal-foto .personal-foto__item:nth-child(n+2) {
-    margin-left: 30px;
-  }
 }
 
-.personal-foto .social-icons {
+.member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.member .member__name {
+  margin-bottom: 10px;
+}
+.member .member__position {
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,12 +604,12 @@ a[href="#"] {
   margin-bottom: 30px;
 }
 
-.personal-foto .social-item {
+.social-item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
 }
-.personal-foto .social-item:last-child {
+.social-item:last-child {
   margin-right: 0px;
 }
 
@@ -626,25 +640,6 @@ a[href="#"] {
 
 .personal-foto .social-icon {
   fill: currentColor;
-}
-
-.member__name {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.1;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
-.member__name .member__position {
-  margin-bottom: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.1;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .clients-list {
