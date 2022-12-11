@@ -19,13 +19,16 @@
     <!--Верхня лінія-->
     <header class="page-header">
         <div class="container">
-            <button type="button" class="menu-button"><svg>
-                <use href="./images/icons.svg#icon-close" width="40" height="40"></use>
-                <use href="./images/icons.svg#icon-menu" width="40" height="40"></use>
-            </svg></button>
             <a href="./index.html" class="logo">Web<span class="logo page-header__logo">Studio</span></a>
-            <nav class="navigation">
-                <ul class="navigation__list list">
+            <div class="navigation-menu">
+            <button type="button" class="menu-button is-open">
+                <svg width="40" height="40" aria-label="перемикач">
+                    <use class="icon-menu" href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+
+           <nav class="navigation">
+              <ul class="navigation__list list">
                     <li class="navigation__item"><a class="link navigation__link navigation__link--current"
                             href="./index.html">Студія</a></li>
                     <li class="navigation__item"><a class="link navigation__link" href="./portfolio.html">Портфоліо</a></li>
@@ -43,6 +46,18 @@
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
+            <ul class="social-links">
+                <li class="social-links__item"><a class="social-links__link" href="">Instagram</a></li>
+                <li class="social-links__item"><a class="social-links__link" href="">Twitter</a></li>
+                <li class="social-links__item"><a class="social-links__link" href="">Facebook</a></li>
+                <li class="social-links__item"><a class="social-links__link" href="">LinkedIn</a></li>
+            </ul>
+            <button class="menu-button">
+                <svg class="menu-button__icon" height="40" width="40">
+                    <use href="./images/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+            </div>
         </div>
     </header>
     <!--Main-->
@@ -487,7 +502,11 @@
                 <button type="submit" class="hero__button button-form">Відправити</button>
             </form>
         </div>
-    </div>
-    <script src="./js/modal.js"></script-->
+    </div>-->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     </body>
     </html>
