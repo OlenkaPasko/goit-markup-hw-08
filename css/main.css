@@ -601,7 +601,12 @@ a[href="#"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .social-icons {
+    margin-bottom: 30px;
+  }
 }
 
 .social-item {
