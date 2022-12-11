@@ -20,10 +20,14 @@
     <header class="page-header">
         <div class="container">
             <a href="./index.html" class="logo">Web<span class="logo page-header__logo">Studio</span></a>
-            <div class="navigation-menu">
-            <button type="button" class="menu-button is-open">
-                <svg width="40" height="40" aria-label="перемикач">
+            <div class="container menu-container">
+            <button type="button" class="menu-button js-open-menu" 
+          aria-controls="navigation-menu">
+                <svg class="menu-button__icon" width="24" height="16">
                     <use class="icon-menu" href="./images/icons.svg#icon-burger"></use>
+                    </svg>
+                <svg class="icon-cross" height="18.67" width="18.67">
+                    <use href="./images/icons.svg#icon-cross"></use>
                 </svg>
             </button>
 
@@ -52,10 +56,8 @@
                 <li class="social-links__item"><a class="social-links__link" href="">Facebook</a></li>
                 <li class="social-links__item"><a class="social-links__link" href="">LinkedIn</a></li>
             </ul>
-            <button class="menu-button">
-                <svg class="menu-button__icon" height="40" width="40">
-                    <use href="./images/icons.svg#icon-cross"></use>
-                </svg>
+            <button class="menu-button js-close-menu">
+                     
             </button>
             </div>
         </div>
