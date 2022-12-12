@@ -18,47 +18,45 @@
 <body>
     <!--Верхня лінія-->
     <header class="page-header">
-        <div class="container">
+        <div class="container menu-container">
             <a href="./index.html" class="logo">Web<span class="logo page-header__logo">Studio</span></a>
-            <div class="container menu-container">
-            <button type="button" class="menu-button js-open-menu" 
-          aria-controls="navigation-menu">
-                <svg class="menu-button__icon" width="24" height="16">
-                    <use class="icon-menu" href="./images/icons.svg#icon-burger"></use>
-                    </svg>
-                <svg class="icon-cross" height="18.67" width="18.67">
-                    <use href="./images/icons.svg#icon-cross"></use>
+            <button type="button" class="menu-button js-open-menu" aria-controls="mobile-menu">
+                <svg class="menu-button__icon" height="40" width="40">
+                    <use href="./images/icons.svg#icon-burger"></use>
                 </svg>
             </button>
-
-           <nav class="navigation">
-              <ul class="navigation__list list">
+            <nav class="navigation">
+                <ul class="navigation__list mobile-menu list">
                     <li class="navigation__item"><a class="link navigation__link navigation__link--current"
                             href="./index.html">Студія</a></li>
-                    <li class="navigation__item"><a class="link navigation__link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="navigation__item"><a class="link navigation__link" href="./portfolio.html">Портфоліо</a>
+                    </li>
                     <li class="navigation__item"><a class="link navigation__link" href="#">Контакти</a></li>
                 </ul>
             </nav>
-            <ul class="navigation__contact list">
+            <ul class="navigation__contact mobile-menu list">
                 <li class="navigation__item"><a class="link navigation__link" href="mailto:info@devstudio.com"><svg
                             class="mail__icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a>
                 </li>
-                <li class="navigation__item"><a class="link navigation__phone" href="tel:+380961111111"><svg class="tel__icon"
-                            width="10" height="16">
+                <li class="navigation__item"><a class="link navigation__phone" href="tel:+380961111111"><svg
+                            class="tel__icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
-            <ul class="social-links">
+            <ul class="social-links mobile-menu">
                 <li class="social-links__item"><a class="social-links__link" href="">Instagram</a></li>
                 <li class="social-links__item"><a class="social-links__link" href="">Twitter</a></li>
                 <li class="social-links__item"><a class="social-links__link" href="">Facebook</a></li>
                 <li class="social-links__item"><a class="social-links__link" href="">LinkedIn</a></li>
             </ul>
-            <button class="menu-button js-close-menu">
-                     
-            </button>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button class="menu-button js-close-menu" aria-expanded="false" aria-controls="">
+                    <svg class="menu-button__icon" height="40" width="40">
+                        <use href="./images/icons.svg#icon-cross"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
