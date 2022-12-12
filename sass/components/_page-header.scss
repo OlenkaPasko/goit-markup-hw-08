@@ -16,14 +16,18 @@ body {
 }
 .logo {
     font-family: var(--secondary-font);
-    font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
+    font-size: 24px;
+    line-height: 28px;
     letter-spacing: 0.03em;
-    color: var(--accent-color)
-}
+    color: var(--accent-color);
 
+    @media screen and (min-width: 1200px) {
+        font-style: normal;
+        font-size: 26px;
+        line-height: 31px;
+    }
+}
 .page-header__logo {
     color: var(--accent-black-color) {
         margin-bottom: 20px;
