@@ -20,12 +20,11 @@
     <header class="page-header">
         <div class="container">
             <a href="./index.html" class="logo">Web<span class="logo page-header__logo">Studio</span></a>
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="menu-toggle_icon" width="40" height="40">
-                    <use href="./images/icons.svg#icon-burger"></use>
-                </svg>
-            </button>
-
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="menu-toggle_icon" width="24" height="23" fill="currentColor">
+                        <use href="./images/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
             <nav class="navigation">
                 <ul class="navigation__list list">
                     <li class="navigation__item"><a class="link navigation__link navigation__link--current"
@@ -50,17 +49,46 @@
 <div class="container">
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-            <svg class="menu-toggle_cross-icon" width="40" height="40">
+            <svg class="menu-toggle__cross-icon" width="18.67" height="18.67" fill="currentColor" >
                 <use href="./images/icons.svg#icon-cross"></use>
             </svg>
         </button>
-        <ul class="social-links">
-            <li class="social-links__item"><a class="social-links__link" href="">Instagram</a></li>
-            <li class="social-links__item"><a class="social-links__link" href="">Twitter</a></li>
-            <li class="social-links__item"><a class="social-links__link" href="">Facebook</a></li>
-            <li class="social-links__item"><a class="social-links__link" href="">LinkedIn</a></li>
+        <ul class="mobile-menu list">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu-link link" href="#">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu-link link" href="#">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu-link link" href="#">Контакти</a>
+            </li>
         </ul>
+        
+        <ul class="mobile-contacts list">
+            <li class="mobile-contacts__item">
+                <a href="#" class="mobile-contacts__phone">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+                <a href="#" class="mobile-contacts__link">info@devstudio.com</a>
+            </li>
         </ul>
+        
+        <ul class="mobile-socials list">
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-social-link">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-social-link">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-social-link">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-social-link">LinkedIn</a>
+            </li>
+        </ul>
+        </div>
     </div>
 </div>
 
