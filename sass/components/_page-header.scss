@@ -16,7 +16,8 @@ body {
     }
 }
 .logo {
- 
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 24px;
@@ -30,6 +31,7 @@ body {
         line-height: 31px;
     }
 }
+
 .page-header__logo {
     color: var(--accent-black-color) {
         margin-bottom: 20px;
