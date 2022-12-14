@@ -222,17 +222,14 @@ body {
   margin-bottom: 32px;
 }
 
-.mobile-contacts {
+.mob-contacts {
   display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  margin-top: 306px;
+  margin-top: auto;
 }
+
 .mobile-contacts .mobile-contacts__phone {
   font-weight: 500;
   font-size: 34px;
@@ -251,14 +248,21 @@ body {
   margin-bottom: 32px;
 }
 
+.mob-socials {
+  display: block;
+  margin-top: auto;
+}
+
 .mobile-socials {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.mobile-socials.mobile-social-link {
+.mobile-social-link {
   font-size: 18px;
   line-height: 1.22;
   color: var(--accent-color);
