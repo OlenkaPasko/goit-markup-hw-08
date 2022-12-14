@@ -175,6 +175,13 @@ body {
   }
 }
 .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -182,10 +189,7 @@ body {
   height: 100%;
   padding: 48px 40px;
   z-index: 999;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: var(--primary-white-color);
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -210,17 +214,11 @@ body {
     display: none;
   }
 }
-.mobile {
-  display: block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.mobile__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
-.mobile-menu .mobile-menu-link {
+.mobile__menu .mobile__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17px;
@@ -228,15 +226,7 @@ body {
   color: var(--title-text-color);
 }
 
-.mobile-menu__item:not(:last-child) {
-  margin-bottom: 32px;
-}
-
-.mob-contacts {
-  display: block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.mobile-m .mob-contacts {
   margin-top: auto;
 }
 
@@ -247,20 +237,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
-.mobile-contacts .mobile-contacts__phone .mobile-contacts__link {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.16px;
-  color: var(--primary-text-color);
-}
 
 .mobile-contacts__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.mob-socials {
-  display: block;
-  margin-top: auto;
+.mobile-contacts__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16px;
+  color: var(--primary-text-color);
 }
 
 .mobile-socials {
