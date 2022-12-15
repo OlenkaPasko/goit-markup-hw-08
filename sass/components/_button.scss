@@ -32,14 +32,17 @@
     display: block;
 
     @media screen and (min-width: 768px) {
-        display: flex;
-        margin-left: 12px;
+        display: block;
+        margin: auto;
     }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
 }
 
 .icon-send {
     margin-left: 10px;
-    color: var(--primary-white-color)
+    color: var(--primary-white-color);
 }
 
 .icon-send {

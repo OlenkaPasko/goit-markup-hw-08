@@ -2,10 +2,24 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-
     background: var(--footer-background-color);
 }
+.footer-conect {
+    display: block;
+    justify-content: center;
+    text-align: center;
 
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+
+    }
+}
 .footer-nav {
     display: block;
     margin-bottom: 60px;
@@ -69,17 +83,6 @@
     color: var(--primary-white-color);
 }
 
-.footer-conect {
-    display: block;
-    justify-content: center;
-    text-align: center;
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-}
 
 .footer-icons {
 
