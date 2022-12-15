@@ -187,7 +187,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 48px 40px;
+  margin: 0;
+  padding: 40px 48px;
   z-index: 999;
   flex-direction: column;
   background-color: var(--primary-white-color);
@@ -208,10 +209,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.mob-contacts {
-  margin-top: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu-container.is-open {
@@ -224,8 +224,22 @@ body {
     display: none;
   }
 }
+.mob-contacts {
+  margin-top: auto;
+}
+
 .mobile__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mobile__menu {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mobile__menu .mobile__link {
@@ -236,11 +250,7 @@ body {
   color: var(--title-text-color);
 }
 
-.mob-contacts {
-  margin-top: auto;
-}
-
-.mobile-contacts .mobile-contacts__phone {
+.mobile__contacts .mobile__contacts-phone {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.1px;
@@ -248,11 +258,11 @@ body {
   color: var(--accent-color);
 }
 
-.mobile-contacts__item:not(:last-child) {
+.mobile__contacts-item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.mobile-contacts__link {
+.mobile__contacts .mobile__contacts-link {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16px;
@@ -269,20 +279,21 @@ body {
   -webkit-box-pack: baseline;
       -ms-flex-pack: baseline;
           justify-content: baseline;
+  margin-top: 64px;
 }
-
-.mobile__social-link {
+.mobile__socials .mobile__social-link {
   font-size: 18px;
   line-height: 1.22;
+  color: var(--accent-color);
 }
 
-.mobile__socials .mobile__socials-tem {
+.mobile__socials .mobile__socials-item {
   position: relative;
 }
-.mobile__socials .mobile__socials-tem:not(:last-child) {
+.mobile__socials .mobile__socials-item:not(:last-child) {
   padding-right: 20px;
 }
-.mobile__socials .mobile__socials-tem::after {
+.mobile__socials .mobile__socials-item::after {
   content: "";
   position: absolute;
   bottom: 50%;
