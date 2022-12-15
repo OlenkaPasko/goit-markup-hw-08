@@ -2,13 +2,19 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+
     background: var(--footer-background-color);
 }
 
 .footer-nav {
-    padding: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    display: block;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 .footer-nav__addres {
@@ -20,6 +26,7 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    text-align:center;
 
     color: var(--primary-white-color)
 }
@@ -32,8 +39,8 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-
-    color: var(--primary-grey-color)
+    color: var(--primary-grey-color);
+   
 }
 
 .footer-nav__tel {
@@ -47,6 +54,7 @@
 
     color: var(--primary-grey-color)
 }
+
 
 .footer-title {
     margin-top: 0px;
@@ -62,21 +70,39 @@
 }
 
 .footer-conect {
-    display: flex;
+    display: block;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
 }
 
 .footer-icons {
-    margin-left: 70px;
 
     .footer-icons__item {
         width: 44px;
         height: 44px;
         margin-right: 10px;
     }
+
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
+    }
+    
 }
 
 .footer-icons__list {
     display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 .footer-icons__list .footer-icons__link {

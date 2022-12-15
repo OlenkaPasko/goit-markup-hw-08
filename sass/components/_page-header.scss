@@ -18,12 +18,14 @@ body {
 .logo {
     padding-top: 16px;
     padding-bottom: 16px;
-    font-family: var(--secondary-font);
+    font-family: 'Raleway';
+    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+   
 
     @media screen and (min-width: 1200px) {
         font-style: normal;
@@ -31,10 +33,20 @@ body {
         line-height: 31px;
     }
 }
+.logo-mob {
+    padding-left: 163px;
+    padding-right: 163px;
 
+    @media screen and (min-width: 768px) {
+        padding: 0;
+    }
+}
 .page-header__logo {
     color: var(--accent-black-color) {
         margin-bottom: 20px;
-        color: var(--primary-white-color)
     }
+}
+
+.page-footer__logo {
+color: var(--primary-white-color);
 }
