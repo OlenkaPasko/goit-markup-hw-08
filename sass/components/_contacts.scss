@@ -98,16 +98,8 @@ a[href="#"] {
         padding-top: 21px;
         padding-bottom: 21px;
     }
-
-    .navigation__link {
-        margin-bottom: 10px;
-
-        .mail__icon {
-            margin-right: 8px;
-        }
     }
 
-}
 @media screen and (min-width: 1200px) {
     .navigation__contact {
         display: flex;
@@ -124,8 +116,20 @@ a[href="#"] {
         justify-content: center;
         color: var(--primary-text-color);
         fill: currentColor;
+        margin-bottom: 10px;
 
-        .mail__icon {
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+
+    .mail__icon {
+        @media screen and (min-width: 768px) {
+            margin-right: 8px;
+        }
+
+        @media screen and (min-width: 1200px) {
             margin-right: 10px;
         }
     }
@@ -163,7 +167,11 @@ a[href="#"] {
     fill: currentColor;
 
     .tel__icon {
+@media screen and (min-width: 768px) {
+        margin-right: 8px;
+    }
+ @media screen and (min-width: 1200px) {
         margin-right: 10px;
     }
-}
+}}
 

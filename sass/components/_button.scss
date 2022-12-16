@@ -27,7 +27,10 @@
 
 
 /*footer-button*/
-
+.footer-form__buttons {
+    display: flex;
+    justify-content: center;
+}
 .hero__button--footer {
     display: block;
 
