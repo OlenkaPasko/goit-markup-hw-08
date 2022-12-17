@@ -6,6 +6,7 @@
 }
 .navigation__list {
     display: flex;
+    align-items: center;
     margin-left: 93px;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -114,6 +115,7 @@ a[href="#"] {
         height: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
         color: var(--primary-text-color);
         fill: currentColor;
         margin-bottom: 10px;
