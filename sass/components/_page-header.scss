@@ -33,14 +33,7 @@ body {
         line-height: 31px;
     }
 }
-.logo-mob {
-    padding-left: 163px;
-    padding-right: 163px;
 
-    @media screen and (min-width: 768px) {
-        padding: 0;
-    }
-}
 .page-header__logo {
     color: var(--accent-black-color) {
         margin-bottom: 20px;

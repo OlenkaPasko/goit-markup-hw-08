@@ -21,23 +21,25 @@
         margin-bottom: 30px;
     }
 
-
     @media screen and (min-width: 480px) {
-        max-width: 450px;
+        flex-basis: calc((100% - 30px *2) / 2);
+        width: 450px;
+    }
 
 
-        @media screen and (min-width: 768px) {
-            max-width: 354px;
-
-        }
-
-        @media screen and (min-width: 1200px) {
-            max-width: 270px;
-        }
-
+    @media screen and (min-width: 768px) {
+        width: 354px;
 
     }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 30px *4) / 4);
+        width: 270px;
+    }
+
+
 }
+
 
 .features__icon {
     width: 100%;

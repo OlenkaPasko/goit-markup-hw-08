@@ -1,19 +1,25 @@
 .section {
     
-    margin: auto;
+    margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width:1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
     }
 }
- @media screen and (max-width: 1200px) {
-            .section-applications {
-              display: none;
-            }
-}
+  .section-applications {
+      @media screen and (max-width: 1200px) {
+          display: none;
+      }
+
+      @media screen and (min-width: 1200px) {
+          display: contents;
+      }
+  }
+
+
 .container {
 
     margin-left: auto;

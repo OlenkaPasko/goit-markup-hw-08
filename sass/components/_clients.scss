@@ -13,8 +13,8 @@
     }
 }
 
-.clients-list__item {
 
+.clients-list__item {
 
     @media screen and (min-width: 480px) {
         width: 210px;
@@ -30,7 +30,7 @@
 
 }
 .clients-list .clients-list__link {
-   
+
     height: 92px;
     display: flex;
     align-items: center;
