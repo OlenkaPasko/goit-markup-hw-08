@@ -10,6 +10,7 @@
 
 
     //phone screen
+    
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url('../images/hero/img_sm@1x.jpg');
 
@@ -57,7 +58,7 @@
 .hero__title {
     margin: auto;
     margin-bottom: 30px;
-    width: 360px;
+    width: 100%;
     font-family: var(--primary-font);
     font-style: inherit;
     font-weight: 900;
