@@ -1,8 +1,10 @@
 .clients-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-    
+
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
@@ -15,6 +17,12 @@
 
 
 .clients-list__item {
+
+    @media screen and (max-width: 389px) {
+    width: 100%;
+    flex-basis: calc((100% - 60px *2) / 2);
+        
+    }
 
     @media screen and (min-width: 480px) {
         width: 210px;
@@ -29,6 +37,7 @@
     }
 
 }
+
 .clients-list .clients-list__link {
 
     height: 92px;
